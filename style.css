@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(./pexels-cátia-matos-1072179.jpg);
+}
+
+/******************* NAVBAR   ***************************************************************************/
+nav{
+    /* background-color: #83c5be; */
+    font-family: 'Times New Roman', Times, serif; 
+    align-items: center; 
+    min-height:50px;
+    width:100vw;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:100%;
+    height:100%
+}
+a{
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
+}
+li{
+    transition: all 0.5s 0s ease;
+}
+li:hover{
+    transform: scale(1.2);
+}
+/*********************BODY******************************************************************************/
+section{
+    background-color: #0b525b;
+    border-radius: 20px;
+    width: 350px;
+    height: 350px;
+    margin: 100px auto;
+    padding:20px;
+}
+div{
+    box-shadow: 2px solid #ccc;
+}
+
+/***************INPUT BOXES************************************************************************************/
+input{
+    font-size: 1.2rem;
+    color: white;
+    background-color: #006466;
+    display: block;
+    width:90%;
+    height: 40px;
+    margin:30px auto;
+    border-radius:15px;
+    transition: all 0.6s 0s ease;
+}
+input:focus{
+    outline:none;
+}
+input:hover{
+    transform: scale(1.05);
+    
+}
+::placeholder{
+    color:#ccc;
+    text-align: center;
+}
+/***********************BUTTONS****************************************************************************/
+button{
+    background-color:#0b525b;
+    color:white;
+    display: block;
+    padding:3px;
+    width:35%;
+    height: 45px;
+    margin:20px auto;
+    border:2px solid white;
+    /* border-radius: 15px; */
+    transition: all 0.5s 0s ease;
+}
+button:hover{
+    border: 0.1px solid yellow;
+    color: yellow;
+    box-shadow: 0px 15px 10px -15px yellow; 
+    transform: translateY(-4px);
+}
+button:focus{
+    outline: none;
+}
+
+/* ************************************************* */
+/*NAV BAR RESPONSIVE BEHAVIOUR*/
+@media screen and (max-width:780px){
+    ul{
+       flex-direction: column;
+       align-items: center;
+    }
+    nav{
+        font-size: 1rem;
+    }
+}
+/****************************************************/
